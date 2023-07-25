@@ -1,0 +1,16 @@
+[package]
+name = "watchfile"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+watchable = "1"
+notify = "6"
+
+[dev-dependencies]
+tempfile = "3.7.0"
+
+[patch.crates-io]
+watchable = { git = "https://github.com/khonsulabs/watchable" }
